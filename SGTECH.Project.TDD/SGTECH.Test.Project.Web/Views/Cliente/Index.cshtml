@@ -1,0 +1,35 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+@using(Html.BeginForm("Index", "Cliente", FormMethod.Get))
+<div class="row">
+    <div class="col-md-12">
+        <label class="control-label">Nome:</label>
+        @Html.TextBox("Nome")
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <label class="control-label">SobreNome:</label>
+            @Html.TextBox("SobreNome")
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <label class="control-label">Telefone:</label>
+            @Html.TextBox("Telefone")
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <label class="control-label">CPF:</label>
+            @Html.TextBox("CPF")
+        </div>
+    </div>
+    <button type="submit" value="Enviar"></button>
+       
+</div>
+
